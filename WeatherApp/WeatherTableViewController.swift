@@ -13,6 +13,8 @@ class WeatherTableViewController: UITableViewController {
     var cityName = ""
     var currentWeather = ""
     
+    var refreshAction = UIRefreshControl() // yenileme nesnesi tanımlandı.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,15 @@ class WeatherTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         getTodayResult()
+        
+        // yenileme işlemleri için gerekli ayarlamalar
+        refreshAction.addTarget(self, action: #selector(refreshNow), for: UIControlEvents.valueChanged)
+        
+        // renk ayarı
+        refreshAction.tintColor = UIColor.red
+        
+        // tableView'e ekleme
+        self.tableView.addSubview(refreshAction)
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +66,20 @@ class WeatherTableViewController: UITableViewController {
         }
         
         
+    }
+    
+    // yenilenince neler olacak onun bilgilerinin bulunduğu alandır.
+    @objc func refreshNow(){
+        
+        
+        // ismini güncelle
+        cityName = "istanbul"
+        
+        // yenilemeyi bitir
+        self.refreshAction.endRefreshing()
+        
+        // metodu cağır
+        getTodayResult()
     }
     
     func getTodayResult(){
