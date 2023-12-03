@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         if cityName.text == ""{
             
-            let alert = UIAlertController(title: "Hata Mesajı", message: "Lütfen şehir adını boş bırakmayınız.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error Message", message: "Please do not leave the city name blank.", preferredStyle: .alert)
             
             let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             
@@ -50,7 +50,5 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    
-    
 }
 
