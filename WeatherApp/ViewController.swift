@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var cityName: UITextField!
     @IBOutlet weak var showButton: UIButton!
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         showButton.layer.cornerRadius = 6
         showButton.layer.masksToBounds = true
     }
-
+    
     
     @IBAction func weatherClicked(_ sender: Any) {
         
@@ -51,6 +51,6 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-
+    
 }
 
