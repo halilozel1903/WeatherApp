@@ -12,3 +12,9 @@
 
 ## Screenshots 🖼
 <img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-1.png" width="250"/> <img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-2.png" width="250"/> <img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-3.png" width="250"/>
+
+## Donation 💸
+
+If this project help 💁 you to develop, you can give me a cup of coffee. ☕
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/halilozel1903)
