@@ -9,3 +9,6 @@
 - API: https://openweathermap.org/api 
 - Structures such as API and JSON were used.
 - Components such as Table View, Text Field, Label and Button were used in the design part.
+
+## Screenshots 🖼
+<img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-1.png" width="250"/> <img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-2.png" width="250"/> <img src="https://github.com/halilozel1903/WeatherApp/blob/master/screen-3.png" width="250"/>
